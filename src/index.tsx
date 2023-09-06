@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { RecoilRoot } from "recoil";
 import { ThemeProvider } from "styled-components";
 import App from "./App";
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
 import { QueryClient, QueryClientProvider } from "react-query";
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from "recoil";
 
 const client = new QueryClient();
 
